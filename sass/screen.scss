@@ -56,15 +56,23 @@
 
 		border: 4px solid #efefef;
 		margin: 2%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 900px;
+
+
 
 		.boxer{
-			min-width: 25%;
+			flex-grow: 1;
+			min-width: 100px;
 			min-height: 120px;
 			border: 2px solid #efefef;
 		}
 
 		.box1{
 			background-color: $green-a;
+			flex-grow: 2;
 		}
 
 		.box2{
