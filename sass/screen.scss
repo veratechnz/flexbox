@@ -1,0 +1,80 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+	/*Color Variables*/
+
+	$blue-a: #6AACF7;
+	$blue-b: #061EA5;
+	$green-a: #206D35;
+	$green-b: #96EC6F;
+	$green-c: #15FA05;
+
+	.box:nth-child(odd){
+   		 background: $blue-a;
+   		}
+
+	.box:nth-child(even){
+	    background: $blue-b;		
+		} 
+
+		
+	body{
+		font-size: 40px; 
+		color:white; 
+		text-align: center;
+		}
+	.wrapper
+		{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 800px;
+		height: 500px;
+		border: 10px solid black;
+		}
+	/*Felx 1 = 1 proportion*/
+	/*It is a proportion compared to the rest. Divided by css*/
+	.box{
+		flex: 1; 
+		min-width: 30%;
+		min-height: 100px;
+		margin: 2px;
+		}
+	/*.box1{order: 10;}
+	.box2{flex: 2;}
+	.box3{order: 9;}
+	.box5{order: 3;}*/
+
+
+
+/* nu-wrapper CSS */
+	.nu-wrapper{
+
+		border: 4px solid #efefef;
+		margin: 2%;
+
+		.boxer{
+			min-width: 25%;
+			min-height: 120px;
+			border: 2px solid #efefef;
+		}
+
+		.box1{
+			background-color: $green-a;
+		}
+
+		.box2{
+			background-color: $green-b;
+		}
+
+		.box3{
+			background-color: $green-c;
+		}
+
+	}
+
+

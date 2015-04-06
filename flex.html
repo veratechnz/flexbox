@@ -3,26 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>FlexBox</title>
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<!-- 1. Display flex for wrapper -->
 	<!-- 2. Flex 1 or 2 on box (Try Flex 5 and 7 etc) -->
 	<!-- 3. or inline flex -->
 	<!-- 4. Solid in chrome -->
-	<style>
-	body{font-size: 40px; color:white; text-align: center;}
-	.wrapper{display: flex;
-		flex-direction: row;
-		}
-	/*Felx 1 = 1 proportion*/
-	/*It is a proportion compared to the rest. Divided by css*/
-	.box{width: 90%; height: 180px; flex: 1;}
-	.box3{flex: 2;}
-	.box:nth-child(odd) {
-    background: #ff0000;
-		}
-	.box:nth-child(even) {
-    background: #0000ff;
-		} 
-	</style>
+	<!-- 5. Flex direction // Column and reverse -->
+	<!-- 6. re-order // Case by case // By default al elements are order 0// Reverse effects this order -->
+	<!-- 7. .box min width - min height Followede by flex-wrap wrap -->
 </head>
 <body>
 
@@ -30,13 +18,19 @@
 		<div class="box box1">1</div>
 		<div class="box box2">2</div>
 		<div class="box box3">3</div>
-		<div class="box box4">4</div>
+<!-- 		<div class="box box4">4</div>
 		<div class="box box5">5</div>
 		<div class="box box6">6</div>
 		<div class="box box7">7</div>
 		<div class="box box8">8</div>
 		<div class="box box9">9</div>
-		<div class="box box10">10</div>
+		<div class="box box10">10</div> -->
+	</div>
+
+	<div class="nu-wrapper">
+		<div class="boxer box1">1</div>
+		<div class="boxer box2">2</div>
+		<div class="boxer box3">3</div>
 	</div>
 	
 </body>
